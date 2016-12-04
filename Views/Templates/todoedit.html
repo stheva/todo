@@ -1,0 +1,23 @@
+﻿<div class="container"  ng-controller="TodoEditController">
+    <h1>Redigere oppgave</h1>
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputDescription">Beskrivelse:</label>
+            <div class="controls">
+                <input type="text" id="inputBeskrivelse" ng-model="todo.description" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputLastName">Utført:</label>
+            <div class="controls">
+                <input type="checkbox" ng-model="todo.completed"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="cancel()" class="btn btn-small">Avbryt</a>
+                <a ng-click="updateTodo()" class="btn btn-small btn-primary">Lagre</a>
+            </div>
+        </div>
+    </form>
+</div>

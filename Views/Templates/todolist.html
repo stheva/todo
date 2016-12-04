@@ -1,0 +1,21 @@
+﻿<div class="span6"  ng-controller="TodoListController">
+    <table class="table table-striped table-condensed">
+        <thead>
+            <tr>
+                <th style="min-width: 80px;">Nummer</th>
+                <th style="min-width: 80px;">Beskrivelse</th>
+                <th style="width:20px;"> </th>
+                <th style="width:20px;"> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="todo in todos">
+                <td>{{ todo.Id }}</td>
+                <td>{{ todo.Description }}</td>
+                <td><a ng-click="editTodo(todo.id)" class="btn btn-small btn-primary">Redigere</a></td>
+                <td><a ng-click="deleteTodo(todo.id)" class="btn btn-small btn-danger">Slett</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <a ng-click="createNewTodo()" class="btn btn-small">Ny oppgave</a>
+</div>

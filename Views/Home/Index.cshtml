@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="en" ng-app="todolist">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo AngularJS App</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#/todolist">Liste over oppgaver</a></li>
+        <li><a href="#/todoedit">Redigere oppgave</a></li>
+        <li><a href="#/todocreate">Ny oppgave</a></li>
+    </ul>
+    <div ng-view></div>
+    <!-- JQuery ================================================================ -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!-- Bootstrap ============================================================= -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- AngularJS ============================================================= -->
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+    <!-- AngularJS App Code ==================================================== -->
+    <script src="~/App/app.js"></script>
+    <script src="~/App/controllers.js"></script>
+    <script src="~/App/services.js"></script>
+</body>
+</html>

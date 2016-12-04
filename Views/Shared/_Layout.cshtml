@@ -1,0 +1,17 @@
+﻿@*<!DOCTYPE html>
+<html lang="en" data-ng-app="@ViewBag.App">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8" />
+    <title>Todo</title>
+    <link href="~/Content/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link href="~/Content/css.min.css" rel="stylesheet" media="all" />
+</head>
+<body>
+    @RenderBody()
+    <script src="~/app/app-todolist.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
+@RenderBody()
